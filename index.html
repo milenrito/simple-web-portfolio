@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The code magazine portfolio</title>
+  <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+  <div class="container">
+    <header  class="container__header">
+      <div class="top">
+        <h1 class="top__title"><span class="top__emoji">📘</span> the code magazine</h1>
+        <nav class="nav">
+          <a class="nav__link" href="#"><i class="nav--bar"></i></a>
+          <ul class="nav__list">
+            <li>Blog</li>
+            <li>Challanges</li>
+            <li>Flexbox</li>
+            <li>css grid</li>
+            <li>Page 5</li>
+            <li>Page 6</li>
+            <li>Page 7</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container__main">
+      <article class="article">
+        <header class="header">
+          <h2 class="header__title">The Basic Language of the Web: HTML</h2>
+          <img class="header--author-image" src="./assets/img/laura-jones.jpg"/>
+          <p class="header__paragraph"><em>Posted by <strong>Laura Jones on Monday, June 21st 2027</strong></em></p>
+          <img class="header--post-image" src="./assets/img/post-img.jpg"/>
+        </header>
+      <p class="article__paragraph">All modern websites and web applications are built using three fundamental 
+        technologies. HTML, CSS and JavaScript. These are the languages of the web.
+      </p>
+      <p class="article__paragraph">
+        In this post, let's focus on HTML. We will learn what HTML is all about, and why
+        you too should learn it.
+      </p>
+      <h3 class="article__subtopic">What is HTML</h3>
+      <p class="article__paragraph">HTML stands for <strong>H</strong>yperText <strong>M</strong>arkup <strong>L</strong>anguage. It's 
+      a markup language that web developers use to strcuture and describe the content of a webpage (not a programming languge).
+      </p>
+      <p class="article__paragraph">HTML consists of elements that describe different types of content: paragraphs, 
+        links, headings, images, video, etc. Web browsers understand HTML and render 
+        HTML code as websites.
+      </p>
+      <p class="article__paragraph">In HTML, each elements is made up of 3 parts:
+        <ol class="article__list">
+          <li>The opening tag</li>
+          <li>The closing tag</li>
+          <li>The actual element</li>
+        </ol>
+        <p class="article__paragraph">You can learn more at <a href="#">MDN Web Docs</a></p>
+      </p>
+      <h3 class="article__subtopic">Why should you learn HTML?</h3>
+      <p class="article__paragraph">There are countless reasons for learning the fundamental language of the web.</p>
+      <p class="article__paragraph">Here are 5 of them:</p>
+      <ul class="article__list">
+        <li>To be able to use fundamental web dev language</li>
+        <li>To hand-craft beautiful websites instead of relying on tools like Wordpress or Wix</li>
+        <li>To build web applications</li>
+        <li>To impress friends</li>
+        <li>To have fun :)</li>
+      </ul>
+      <p class="article__paragraph">Hopefully you learned something new here. See you next time!</p>
+      </article>
+    </main>
+    <aside class="related__container">
+      <h4 class="related__title">Releated posts</h4>
+      <ul class="related__list">
+        <li class="related__post">
+          <img class="related__post--img" src="./assets/img/related-1.jpg"/>
+          <a href="#">How to Learn Web Development</a>
+          <p>By Jonas Schmedtmann</p>
+        </li>
+        <li class="related__post">
+          <img class="related__post--img" src="./assets/img/related-2.jpg"/>
+          <a href="#">The Unknown Powers of CSS</a>
+          <p>By Jim Dillon</p>
+        </li>
+        <li class="related__post">
+          <img class="related__post--img" src="./assets/img/related-3.jpg"/>
+          <a href="#">Why JavaScript is Awesome</a>
+          <p>By Matilda</p>
+        </li>
+      </ul>
+    </aside>
+    <footer class="container__footer">
+     <p>The original idea was created a developed by  <strong>Jonas Schmedtmann.</strong></p>
+     <p>This version was developed <strong>Milton Enriquez</strong>. A bit styles was changed and some media queries was added.</p>
+     <p>This version include responsive design for three devices like mobile, tablet and desktop.</p>
+     <p>This version was not created for commercial purposes, it was created only by purposes of portfolio.</p>
+    </footer>
+  </div>
+  <script>
+    document.querySelector('.nav--bar').addEventListener('click',
+    function(){
+      const viewportWidth=document.documentElement.clientWidth;
+      alert(`viewport width = ${viewportWidth}`);
+    });
+  </script>
+</body>
+</html>
